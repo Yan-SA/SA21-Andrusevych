@@ -7,6 +7,8 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+
+
 a {
   color: #fff;
   text-decoration: none;
@@ -257,13 +259,14 @@ a {
   border: none;
   border-bottom: 1px solid #000;
   background: transparent;
-  color: #fff;
+  color: #000;
   margin-bottom: 2rem;
 }
 
 .form-textarea {
   font-family: 'Roboto', sans-serif;
   border: 1px solid #000;
+  color: #000;
   height: 10rem;
   margin-top: 2rem;
 }
