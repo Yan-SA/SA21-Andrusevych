@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  background-image: url('./img/wall\ 1.png');
+  background-position: bottom;
+}
+
+.title-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  font-size: 15rem;
+  color: #fff;
+
+  font-family: 'Bebas Neue', cursive;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 6rem;
+  margin: 2rem;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.navbar-btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-right: 3rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.dropdown-content {
+  opacity: 0;
+  display: none;
+  width: 160px;
+  left: 14%;
+  position: absolute;
+
+  transition: opacity 0.15s ease-out;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 1.6rem;
+  float: right;
+}
+
+.dropdown-container:hover .dropdown-content {
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-container:hover .arrow {
+  transform: rotate(90deg);
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  max-width: 70%;
+  margin-left: 9rem;
+  font-size: 5.5rem;
+  font-weight: 300;
+  color: white;
+}
+
+.title-btn {
+  font-size: 6rem;
+  font-weight: 700;
+  color: white;
+  align-self: flex-end;
+  border: 2px solid #fff;
+  padding: 1rem;
+  margin-bottom: 9rem;
+  margin-right: 15rem;
+}
+
+.description {
+  width: 70%;
+  margin-top: 7rem;
+  margin-left: 10rem;
+  margin-bottom: 6rem;
+  font-size: 2.4rem;
+}
+
+.promotion-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.promotion-title {
+  font-size: 7rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 10rem 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.images {
+  max-width: 30%;
+  height: max-content;
+}
+
+.footer {
+  background-image: url('./img/wall\ 1.png');
+  background-position: bottom;
+  font-size: 1.6rem;
+  padding: 2rem;
+  color: white;
+  margin-top: 10rem;
+}
+
+.faq {
+  text-align: start;
+  margin: 5rem 0;
+  margin-left: 3rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.about {
+  border: 1px solid #000;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-top: 1rem;
+  }
+
+  .btn-container {
+    opacity: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 8rem;
+    padding: 2rem 1rem;
+    margin: 1rem 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .dropdown-container {
+    display: none;
+  }
+
+  .navbar:hover .btn-container {
+    opacity: 1;
+  }
+
+  .title-container {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .title-btn {
+    font-size: 3.2rem;
+    margin: 3rem 0;
+    align-self: center;
+  }
+
+  .description {
+    margin: 3rem auto;
+  }
+
+  .promotion-title {
+    font-size: 3rem;
+    margin: 3rem 0;
+  }
+
+  .faq {
+    text-align: center;
+  }
+
+  .about {
+    border: 1px solid #000;
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .title-big {
+    font-size: 10rem;
+
+    padding: 5rem 0;
+  }
+}
+
+.form-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-title {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.form-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.form-input {
+  height: 4.7rem;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.form-textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #000;
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+.form-submitbtn {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  align-self: flex-end;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+}
+
+.form-submitbtn a {
+  font-size: 1.5rem;
+}
+
+.form-submitbtn:focus {
+  outline: none;
+}
+
+.form-submitbtn:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-submitbtn:hover {
+  background-color: #fff;
+}
+
+.form-submitbtn:hover a {
+  color: #000;
+}
+
+@media only screen and (max-width: 950px) {
+  .form-wrapper {
+    width: 90%;
+  }
+}
+
+#myVideo {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.pricing-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.pricing-title {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+.pricing-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  padding: 1rem;
+  margin-top: 7rem;
+  background-color: #080f19;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.old-price {
+  font-size: 2.5rem;
+  color: #949494;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(221, 66, 66);
+  margin-bottom: 1rem;
+}
+
+.pricing-image {
+  width: 100%;
+}
+
+.description {
+  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.rang {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}

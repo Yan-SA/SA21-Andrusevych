@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img class="logo" src="img/favicon 1.svg" />
+        <div class="btn-container">
+          <a class="navbar-btn" href="home.html">Home</a>
+          <a class="navbar-btn" href="pricing.html">Pricing</a>
+          <div class="dropdown-container">
+            <div class="navbar-btn dropdown">
+              Info
+              <p class="arrow">&#5125;</p>
+            </div>
+
+            <div class="dropdown-content">
+              <a class="navbar-btn" href="FAQ.html">FAQ</a>
+              <a class="navbar-btn" href="about-us.html">About us</a>
+            </div>
+          </div>
+          <a class="navbar-btn mobile" href="FAQ.html">FAQ</a>
+          <a class="navbar-btn mobile" href="about-us.html">About us</a>
+          <a class="navbar-btn" href="contacts.html">Contacts</a>
+        </div>
+      </nav>
+      <h1 class="title-big">Contacts</h1>
+    </header>
+    <main class="form-wrapper">
+      <h1 class="form-title">Contact Us</h1>
+      <form class="form-container">
+        <input type="text" id="name" placeholder="Name" class="form-input" />
+        <input type="text" id="lname" placeholder="Email" class="form-input" />
+        <input type="text" id="lname" placeholder="Subject" class="form-input" />
+        <textarea id="message" cols="30" rows="10" placeholder="Message" class="form-input form-textarea"></textarea>
+        <button class="form-submitbtn"><a href="./home.html">Submit</a></button>
+      </form>
+    </main>
+    <footer class="footer">Copyright © HyperMind Inc, 1999–2021. All rights reserved.</footer>
+  </body>
+</html>
